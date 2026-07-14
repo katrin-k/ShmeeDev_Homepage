@@ -55,12 +55,36 @@ const handleMenuLinkClick = (ev) => {
   toggleAriaExpanded(ev.target);
 };
 
+const handleFocusOut = (ev, listWrapper) => {
+  setTimeout(() => {
+    if (!listWrapper.contains(document.activeElement)) {
+      toggleAriaExpanded(listWrapper.previousElementSibling, false);
+    }
+  }, 0);
+};
+
+const handleKeyboardEvent = (ev, listWrapper) => {
+  if (ev.key === "Escape") {
+    toggleAriaExpanded(listWrapper.previousElementSibling, false);
+  }
+};
+
 const initMainNav = () => {
   if (isMobile()) {
     document.querySelector('.main-nav__mobile-toggle').addEventListener('click', handleMenuLinkClick);
+    const mainNavWrapper = document.querySelector('.main-nav__wrapper');
+    mainNavWrapper.addEventListener('focusout', (ev) => handleFocusOut(ev, mainNavWrapper));
+    document.addEventListener('keyup', (ev) => handleKeyboardEvent(ev, mainNavWrapper));
   }
   if (!isMobile()) {
-    forAll('.main-nav__link:has(+ .main-nav__sub-list)',
+    forAll('.main-nav__sub-list',
+      sublist => {
+        sublist.addEventListener('focusout', (ev) => handleFocusOut(ev, sublist));
+        document.addEventListener('keyup', (ev) => handleKeyboardEvent(ev, sublist));
+      }
+    );
+
+    forAll('.main-nav__link--level-1',
       link => {
         link = linkToButton(link);
         link.removeAttribute('aria-current');

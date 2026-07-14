@@ -3,7 +3,7 @@
 {# define macro #}
 {% macro renderNavListItem(entry) -%}
 <li>
-  <a href="{%- if entry.url -%}{{ entry.url }}{%- else-%}{{ entry.data.page.url }}{%- endif -%}"{% if entry.url == page.url %} aria-current="page"{% endif %} class="main-nav__link ">
+  <a href="{%- if entry.url -%}{{ entry.url }}{%- else-%}{{ entry.data.page.url }}{%- endif -%}"{% if entry.url == page.url %} aria-current="page"{% endif %} class="main-nav__link {%- if entry.children.length -%}{{' main-nav__link--level-1'}}{%- endif -%} ">
     {%- if entry.data.title -%}{{ entry.data.title }}{%- else-%}{{ entry.data.student.title }}{%- endif -%}
   </a>
 
