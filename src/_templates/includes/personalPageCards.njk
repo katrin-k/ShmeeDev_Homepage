@@ -1,20 +1,17 @@
-
-{% set currentUrl = page.url %}
-
 <ul class="project-teaser--halves personal breakout">
-    {% for page in collections.personal %}
+  {% for page in collections.personal %}
 
     <li>
       <div class="card">
         {# too many position absolutes, hacky hidden extra link #}
-        <a aria-hidden="true" tabindex="-1" href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__hack"></a>
-        {% if page.heroImage.src %}
+        <a aria-hidden="true" tabindex="-1" href="{{ page.data.title | slugify }}" class="card__hack"></a>
+        {% if page.data.heroImage.src %}
         <div class="card__img-wrapper">
-          {% cardthumbnail page.heroImage.src, page.heroImage.alt, "card__img" %}
+          {% cardthumbnail page.data.heroImage.src, page.data.heroImage.alt, "card__img" %}
         </div>
         {% endif %}
         <div class="card__content">
-          <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__link text-heading-bold">
+          <a href="{{ page.data.title | slugify }}" class="card__link text-heading-bold">
             {{ page.data.title }}
           </a>
         </div>

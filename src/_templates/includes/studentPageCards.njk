@@ -1,19 +1,16 @@
-
-{% set currentUrl = page.url %}
-
 <ul class="project-teaser--twothird student breakout">
     {% for page in student %}
     <li>
       <div class="card">
         {# too many position absolutes, hacky hidden extra link #}
-        <a aria-hidden="true" tabindex="-1" href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__hack"></a>
+        <a aria-hidden="true" tabindex="-1" href="{{ page.title | slugify }}" class="card__hack"></a>
         {% if page.heroImage.src %}
         <div class="card__img-wrapper">
           {% cardthumbnail page.heroImage.src, page.heroImage.alt, "card__img" %}
         </div>
         {% endif %}
         <div class="card__content">
-          <a href="/student-projects/{{ page.title | slugify }}" {{ 'aria-current=page' if currentUrl === page.url }} class="card__link text-heading-bold">
+          <a href="{{ page.title | slugify }}" class="card__link text-heading-bold">
             {{ page.title }}
           </a>
         </div>
