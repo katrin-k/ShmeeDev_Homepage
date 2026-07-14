@@ -1,0 +1,41 @@
+{
+  "title": "Sakura's Journey",
+  "responsibilities": {
+    "leadGameDesigner": {
+      "image": {
+        "src": "src/pages/student-projects/sakuras-journey/images/01-DOC-SakurasJourney-GDD.png",
+        "alt": ""
+      }
+    },
+    "levelDesigner": {
+      "image": {
+        "src": "src/pages/student-projects/sakuras-journey/images/02-DOC-SakurasJourney-EarthArena-Blockout.png",
+        "alt": ""
+      }
+    },
+    "narrativeDesign": {
+      "image": {
+        "src": "src/pages/student-projects/sakuras-journey/images/04-DOC-SakurasJourney-HUD.drawio.png",
+        "alt": ""
+      }
+    }
+  },
+  "gallery": [
+    {
+      "src": "src/pages/student-projects/sakuras-journey/images/01-GP-SakurasJourney-EarthArena.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/sakuras-journey/images/02-GP-SakurasJourney-FireArena.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/sakuras-journey/images/03-GP-SakurasJourney-WaterArena.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/sakuras-journey/images/04-GP-SakurasJourney-WindArena.png",
+      "alt": ""
+    }
+  ]
+}

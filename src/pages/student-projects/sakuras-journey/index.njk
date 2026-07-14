@@ -1,0 +1,148 @@
+---
+layout: base
+title: "Sakura's Journey"
+tags: student
+homepageorder: 5
+permalink: "student-projects/{{ title | slugify }}/"
+heroImage:
+  src: "src/pages/student-projects/sakuras-journey/images/03-GP-SakurasJourney-WaterArena.png"
+  alt: ""
+eleventyNavigation:
+  key: studentproject
+  title: {{ page.title }}
+  parent: student
+  order: 3
+---
+
+<div class="hero full-width">
+  {% heroimage heroImage.src, heroImage.alt, "full-width hero__img" %}
+  <div class="hero__content">
+    <h1>{{ title }}</h1>
+  </div>
+</div>
+
+<h2>Trailer</h2>
+<iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/KsPI_YePx_o" title="Three scenes of the game Sakura's Journey." frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2>About the Game</h2>
+<p>Sakura's Journey is a twin-stick arena shooter with tower defense elements and boss fights.</p>
+<p>The player assumes the role of „Kitsune hime“: a fox masked priest with demi-god qualities.</p>
+<p>Players have to fight their way through increasingly challenging arenas and endless waves of enemies. In doing so, they can hone their skills and become evermore capable fighters as they upgrade every skill to their liking.</p>
+
+
+<h2>Story</h2>
+<p>The forsaken princess Takiyasha Hime has sworn bloody vengeance to the Kami who once betrayed her family. She has conjured an army of Yokai from the Land of Darkness – yomi no kuni – to wreak havoc in the temples worshipping those Kami. Only an essence of purity can cleanse the temples and free them of the evil which has befallen them: the Yokai-spirits haunting the once holy halls. This force is the character, Kitsune hime, and her spiritual totem: a holy sakura tree, an aspect of her own power.</p>
+
+
+<h2>Responsibilities</h2>
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+
+    <div class="two-column__one flow prose">
+      <h3>Lead Game Designer</h3>
+      <p>As the Lead Game Designer on this project I developed the core mechanics and systems of the game in close collaboration with the other Game Designer on the project. I wrote the entire documentation for the game besides the classical Game Design Document, Vision Statement and Document, Theming and Environment Guidelines. I was also responsible for Marketing and the content of our <a href='https://s4g.itch.io/sakuras-journey' rel='noopener'>Itch.io-Page</a>.</p>
+    </div>
+
+    <div class="two-column__two flow">
+      <div class="skill__img-wrapper">
+        {% image sakuraImages.responsibilities.leadGameDesigner.image.src, sakuraImages.responsibilities.leadGameDesigner.image.alt, "skill__img" %}
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="two-column two-column--swapped">
+
+    <div class="two-column__one flow prose">
+      <h3>Level Designer</h3>
+      <p>As the Level Designer of this project I designed 4 levels from start to finish, starting with research on Japanese temples which is where the game is set. I outlined the levels in text, sketched several layouts, blocked out the levels (gray boxing) and was also responsible for set dressing the levels.</p>
+      <p>I figured out the metrics for the game: size of the main character and enemies, level size and prop scale.</p>
+      <p>Based on my research on Japanese temples and Japanese religious architecture I wrote a guide for the Art Team on possible environment elements and set pieces and included references from real world Japanese temples. During the entire development project I worked in close collaboration with the Art Lead and the Environment Artist responsible for modeling the environment art assets.</p>
+    </div>
+
+    <div class="two-column__two flow">
+      <div class="skill__img-wrapper">
+        {% image sakuraImages.responsibilities.levelDesigner.image.src, sakuraImages.responsibilities.levelDesigner.image.alt, "skill__img" %}
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="two-column">
+
+    <div class="two-column__one flow prose">
+      <h3>Narrative Design</h3>
+      <p>As the Narrative Designer of the project I did research on Japanese religion and the cultural concept of Yokai (the enemies in the game - though not all Yokai are necessarily evil ;-) ).</p>
+      <p>This research informed the background story for the game, the character profile and the enemy roster occurring in the game. - I communicated intensively with the Art Team and together we figured out what was possible and defined the aesthetics & characters of the game.</p>
+    </div>
+
+    <div class="two-column__two flow">
+      <div class="skill__img-wrapper">
+        {% image sakuraImages.responsibilities.narrativeDesign.image.src, sakuraImages.responsibilities.narrativeDesign.image.alt, "skill__img" %}
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="flow prose">
+  <h3>UI/ UX Design</h3>
+  <p>I was also responsible for specifying and refining the UI-Elements we needed based on the Game Design. - I created the Screen Flow for the game, produced low key and high key wireframes for screens and HUD and together with the UI-Artist of the project defined the aesthetic look, scale and positioning of the User Interface(s).</p>
+</div>
+
+<div class="flow prose">
+  <h3>Scripting</h3>
+  <p>I supported the Engineering Team with a number of bug fixes and some features like enemy spawners, set up and programming HUD-elements or a directional indicator for the level goal.</p>
+</div>
+
+
+{% if sakuraImages.gallery[0].src %}
+  <section id="splide-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
+    <h2 id="carousel-heading" class="visuallyhidden">Project Images</h2>
+
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in sakuraImages.gallery %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+{% endif %}
+
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    const galleries = document.querySelectorAll('.splide');
+    galleries.forEach(slide => {
+      let splide = new Splide(`#${slide.id}`, {
+        type  : 'fade',
+        rewind: true,
+        padding: '3rem',
+        gap:'2rem',
+        lazyLoad: 'nearby',
+      });
+      splide.mount();
+    });
+  // init lightbox
+  const lightbox = document.querySelectorAll('.lightbox');
+  lightbox.forEach(box => {
+    const dialog = box.querySelector(".lightbox-dialog");
+    const showButton = box.querySelector(".lightbox-button-show");
+    const closeButton = box.querySelector(".lightbox-button-close");
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+  });
+  } );
+</script>
+
+<script defer src="/assets/vendor/splide-4.1.3/dist/js/splide.min.js"></script>

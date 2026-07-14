@@ -1,0 +1,102 @@
+{
+  "title": "Office Rush '95",
+  "onepager": {
+    "title": "",
+    "src": "src/pages/student-projects/office-rush/images/00_IMG_DOC_OfficeRush_OnePageDD_Updated.png",
+    "alt": ""
+  },
+  "responsibilities": {
+    "leadGameDesigner": {
+      "skillGallery": [
+        {
+          "src": "src/pages/student-projects/office-rush/images/Office_Rush_Market_Analysis_Summary.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/Office_Rush_Quantic_Foundry_Player_Type.png",
+          "alt": ""
+        }
+      ]
+    },
+    "levelDesigner": {
+      "skillGallery": [
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_01_IMG_DOC_Office_Rush_Original_Layout_by_Fedir_Stepanenko.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_02_IMG_DOC_OfficeRush_Original_Layout_Stations_by_Robert_Schmieder.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_03_IMG_DOC_Office_Rush_Block_Out_15-01-26-Fedir_Stepanenko.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_04_IMG_DOC_Office_Rush_Block_Out_15-01-26_Marked_Zones_Rober_Schmieder.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_05_IMG_DOC_OfficeRush_Layout_260126_TimeFromTaskboard.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_06_IMG_DOC_OfficeRush_Layout_NPCs.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_07_IMG_DOC_Office_Rush_NPC_Placement_03-02-2026.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/office-rush/images/02_08_IMG_DOC_Office_Rush_Level_Final_Stage.png",
+          "alt": ""
+        }
+      ]
+    },
+    "qualityAssurance": {
+      "resimage": {
+        "src": "src/pages/student-projects/office-rush/images/03_IMG_DOC_OfficeRush_QA_Testcases_Sort.png",
+        "alt": ""
+      }
+    },
+    "marketing": {
+      "image": {
+        "src": "src/pages/student-projects/office-rush/images/04_IMG_DOC_Itch_Page.png",
+        "alt": ""
+      }
+    },
+    "scripting": {
+      "image": {
+        "src": "src/pages/student-projects/office-rush/images/05_IMG_DOC_Office_Rush_Sound_Scripting.png",
+        "alt": ""
+      }
+    }
+  },
+  "gallery": [
+    {
+      "src": "src/pages/student-projects/office-rush/images/01_IMG_GP_Office_Rush_95_Title_Screen.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/office-rush/images/02_IMG_GP_Office_Rush_95_Stamp.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/office-rush/images/03_IMG_GP_Office_Rush_95_Sort_and_EMail.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/office-rush/images/04_IMG_GP_Office_Rush_95_Door_Lock.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/office-rush/images/05_IMG_GP_Office_Rush_95_PvP_01.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/office-rush/images/06_IMG_GP_Office_Rush_95_PvP_02.png",
+      "alt": ""
+    }
+  ]
+}
