@@ -226,15 +226,57 @@ Important: Always put image into container `.two-column__two`. This assures the 
 
 ```
 
+#### Layout CSS classes
+
+The website uses various css utility classes for layout and styling.
+See in file `src/assets/partials/_layout.scss`.
+
+##### Horizontal placement
+Without any additional wrapper classes, all content is placed as a single column. The max-width is 80ch (80 characters). See in file `_layout.scss`, lines 62ff, the css selector `.content-grid`.
+
+If content needs to be bigger, use classes `.breakout` or `.full-width` as a wrapper around that content.
+- breakout: max-width of 160ch (used e.g. for two-column elements)
+- fill-width: all full page width (used e.g. for hero images)
+
+##### Vertical styling
+
+Utility class: `.flow`.
+The CSS class is set on the parent element. All direct children receive a vertical spacing. Standard is 1em.
+
+If the spacing between elements should be a bit larger, add the class `.flow-80`.
+
+If blocks contain heading followed by paragraph and/or lists, add special text content styling with the css class `.prose`.
+
+Examples:
+```html
+<!-- Standard use of .flow -->
+<div class="flow"></div>
+
+<!-- Larger spacing -->
+<div class="breakout flow flow-80"></div>
+
+<!-- Special text spacing -->
+<div class="flow prose"></div>
+```
+
+
 #### Image shortcodes in Nunjucks
 
 The image shortcodes process the images and create the HTML, see `src/_11ty/imageShortcode.js`.
 
-Parmaters are given in quotes, comma-separated. Options are: src, alt, customClass.
+Arguments are given in quotes, comma-separated. Options are: 
+- src: file path, either as string (see example of standard image) or as json reference (see example of cardthumbnail).
+- alt: alternative text, short description of the image
+- customClass: optional
 
 Standard image
 ```
 {% image "src/pages/student-projects/office-rush/images/01_IMG_GP_Office_Rush_95_Title_Screen.png", "Title screen of project shows an empty lila-blue cubicle office", "my-class" %}
+```
+
+Hero image, used on the project pages
+```
+{% heroimage raccoonImages.heroImage.src, "", "full-width hero__img" %}
 ```
 
 Card thumbnail image, used in the teaser lists, see e.g. `homePageCards.njk`
@@ -242,10 +284,21 @@ Card thumbnail image, used in the teaser lists, see e.g. `homePageCards.njk`
 {% cardthumbnail page.heroImage.src, page.heroImage.alt, "card__img" %}
 ```
 
-Hero image, used on the project pages
-```
-{% heroimage raccoonImages.heroImage.src, "", "full-width hero__img" %}
-```
+### Create a new project page
+
+1. Create page
+2. Add to home page
+
+#### Create project
+
+1. Create folder in `src/pages`.
+2. Add index.njk.
+3. Create folder "images", place all original images here.
+4. Create image json file in `src/_data`, add image references.
+
+#### Add project to homepage
+
+Add project to file `src/_data/homepageList.json`.
 
 ## Ressources
 
