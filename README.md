@@ -131,10 +131,10 @@ Replace the attributes src and title:
     <button class="lightbox-button-close" autofocus aria-label="Close modal">
       {% include "icons/plain-cross.njk" %}
     </button>
-    {% heroimage officerushImages.onepager.src, student.onepager.alt, "onepager__img-modal" %}
+    {% heroimage officerushImages.onepager.src, officerushImages.onepager.alt, "onepager__img-modal" %}
   </dialog>
   <button class="lightbox-button-show" aria-label="Show large image in modal">
-  {% image officerushImages.onepager.src, student.onepager.alt, "onepager__img-button" %}
+  {% image officerushImages.onepager.src, officerushImages.onepager.alt, "onepager__img-button" %}
   </button>
 </div>
 
