@@ -28,20 +28,20 @@ eleventyNavigation:
 <p>Office Rush ‘95 is a local multi-player office simulation in which the two players compete for the title of “Employee of the Month”. Players have to complete as many office task assignments as possible to win. To get the job done players get to play funny mini games which simulate and mock the mundanity of certain kinds of office tasks. Players are not only tested for their skill during the mini games they are also equipped with means of sabotage to impede the progress of the other player. They can lock doors for the other player or push each other into an onerous, decelerating conversation with co-workers or superiors.</p>
 
 
-{% if student.onepager.src %}
-  <h2>{{ officerushImages.onepager.title }}</h2>
-  <div class="lightbox">
-    <dialog class="lightbox-dialog">
-      <button class="lightbox-button-close" autofocus aria-label="Close modal">
-        {% include "icons/plain-cross.njk" %}
-      </button>
-      {% heroimage officerushImages.onepager.src, student.onepager.alt, "onepager__img-modal" %}
-    </dialog>
-    <button class="lightbox-button-show" aria-label="Show large image in modal">
-    {% image officerushImages.onepager.src, student.onepager.alt, "onepager__img-button" %}
+
+<h2>One Page Design Document</h2>
+<div class="lightbox">
+  <dialog class="lightbox-dialog">
+    <button class="lightbox-button-close" autofocus aria-label="Close modal">
+      {% include "icons/plain-cross.njk" %}
     </button>
-  </div>
-{% endif %}
+    {% heroimage officerushImages.onepager.src, officerushImages.onepager.alt, "onepager__img-modal" %}
+  </dialog>
+  <button class="lightbox-button-show" aria-label="Show large image in modal">
+  {% image officerushImages.onepager.src, officerushImages.onepager.alt, "onepager__img-button" %}
+  </button>
+</div>
+
 
 <h2>Responsibilities</h2>
 <div class="breakout flow flow-80 skills">
