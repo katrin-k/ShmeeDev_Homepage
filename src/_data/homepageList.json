@@ -1,15 +1,15 @@
 [
   {
     "title": "Office Rush '95",
-    "url": "/student-projects/office-rush-95/",
+    "url": "student-projects/office-rush-95/",
     "heroImage": {
-      "src": "src/pages/student-projects/images-office-rush/00_IMG_Hero_Banner_Office_Rush.png",
+      "src": "src/pages/student-projects/office-rush/images/00_IMG_Hero_Banner_Office_Rush.png",
       "alt": ""
     }
   },
   {
     "title": "Ballad of Balan",
-    "url": "/personal-projects/ballad-of-balan/",
+    "url": "personal-projects/ballad-of-balan/",
     "heroImage": {
       "src": "src/pages/personal-projects/ballad-of-balan/images/00_IMG_GP_Ballad_of_Balan_Banner.png",
       "alt": ""
@@ -17,25 +17,25 @@
   },
   {
     "title": "Barque of Ra",
-    "url": "/student-projects/barque-of-ra/",
+    "url": "student-projects/barque-of-ra/",
     "heroImage": {
-      "src": "src/pages/student-projects/images-barque-of-ra/02_IMG_GP_Barque_of_Ra_Combat_03.png",
+      "src": "src/pages/student-projects/barque-of-ra/images/02_IMG_GP_Barque_of_Ra_Combat_03.png",
       "alt": ""
     }
   },
   {
     "title": "Trash and Stash",
-    "url": "/personal-projects/trash-and-stash/",
+    "url": "personal-projects/trash-and-stash/",
     "heroImage": {
       "src": "src/pages/personal-projects/trash-and-stash/images/05_06_IMG_DOC_RacoonGame_BlockOut.png",
       "alt": ""
     }
   },
   {
-    "title": "Sakura’s Journey",
-    "url": "/student-projects/sakura-s-journey/",
+    "title": "Sakura's Journey",
+    "url": "student-projects/sakuras-journey/",
     "heroImage": {
-      "src": "src/pages/student-projects/images-sakuras-journey/03-GP-SakurasJourney-WaterArena.png",
+      "src": "src/pages/student-projects/sakuras-journey/images/03-GP-SakurasJourney-WaterArena.png",
       "alt": ""
     }
   }

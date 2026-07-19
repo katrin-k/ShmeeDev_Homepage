@@ -39,6 +39,10 @@
       grid-column: 2/4;
       grid-row: 1/2;
     }
+    &:focus-visible {
+      outline: 1px solid var(--color-accent);
+      outline-offset: 2px;
+    }
   }
   &__byline {
     font-size: var(--font-size-2);
@@ -97,6 +101,10 @@ css for main nav desktop
   .main-nav__wrapper {display: none;}
   .main-nav__mobile-toggle[aria-expanded=true] ~ .main-nav__wrapper {display: flex;}
   .main-nav__mobile-toggle {
+    &:focus-visible {
+      outline: 1px solid var(--color-accent);
+      outline-offset: 2px;
+    }
     svg {
       width: 80px;
       height: auto;

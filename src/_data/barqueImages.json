@@ -1,0 +1,69 @@
+{
+  "title": "Barque of Ra",
+  "heroImage": {
+    "src": "src/pages/student-projects/barque-of-ra/images/02_IMG_GP_Barque_of_Ra_Combat_03.png",
+    "alt": ""
+  },
+  "responsibilities": {
+    "levelDesigner": {
+      "skillGallery": [
+        {
+          "src": "src/pages/student-projects/barque-of-ra/images/01_01_IMG_DOC_Barque_of_Ra_LD_Sample.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/barque-of-ra/images/01_02_IMG_DOC_Barque_of_Ra_LDD.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/barque-of-ra/images/01_03_IMG_DOC_Barque_of_Ra_EnvironmentArt.png",
+          "alt": ""
+        }
+      ]
+    },
+    "narrativeDesign": {
+      "image": {
+        "src": "src/pages/student-projects/barque-of-ra/images/02_IMG_DOC_Barque_of_Ra_Narrative_Collage.png",
+        "alt": ""
+      }
+    },
+    "uidesign": {
+      "skillGallery": [
+        {
+          "src": "src/pages/student-projects/barque-of-ra/images/03_01_IMG_DOC_Barque_of_Ra_Unit_Positioning.drawio.png",
+          "alt": ""
+        },
+        {
+          "src": "src/pages/student-projects/barque-of-ra/images/03_02_IMG_DOC_Barque_of_Ra_Unit_summoning_and_placement.drawio.png",
+          "alt": ""
+        }
+      ]
+    }
+  },
+  "gallery": [
+    {
+      "src": "src/pages/student-projects/barque-of-ra/images/01_IMG_GP_Barque_of_Ra_Combat.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/barque-of-ra/images/02_IMG_GP_Barque_of_Ra_Combat_03.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/barque-of-ra/images/03_IMG_GP_Barque_of_Ra_Combat_06.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/barque-of-ra/images/04_IMG_GP_Barque_of_Ra_FX_01.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/barque-of-ra/images/05_IMG_GP_Barque_of_Ra_Narrative_Gate.png",
+      "alt": ""
+    },
+    {
+      "src": "src/pages/student-projects/barque-of-ra/images/06_IMG_GP_Barque_of_Ra_Level_End.png",
+      "alt": ""
+    }
+  ]
+}

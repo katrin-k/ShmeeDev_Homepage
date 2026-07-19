@@ -1,0 +1,172 @@
+---
+layout: base
+title: "Barque of Ra"
+tags: student
+homepageorder: 3
+permalink: "student-projects/{{ title | slugify }}/"
+heroImage:
+  src: "src/pages/student-projects/barque-of-ra/images/02_IMG_GP_Barque_of_Ra_Combat_03.png"
+  alt: ""
+eleventyNavigation:
+  key: studentproject
+  title: {{ page.title }}
+  parent: student
+  order: 2
+---
+
+<div class="hero full-width">
+  {% heroimage heroImage.src, heroImage.alt, "full-width hero__img" %}
+  <div class="hero__content">
+    <h1>{{ title }}</h1>
+  </div>
+</div>
+
+<h2>Trailer</h2>
+<iframe width="900" height="506" src="https://www.youtube-nocookie.com/embed/YN8k1mo7Ftg" title="Three scenes of the game Barque of Ra." frameborder="0" allow="encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2>About the Game</h2>
+<p>Barque of Ra is a casual Tower Defense Game in which players delve into the underworld as the Sun God Ra on their holy Solar Barque. They must safely guide the souls of the perished through the 12 gates of Duat (the underworld) to the Afterlife. But beware! The demons of Duat will try the God and attack the Barque relentlessly.</p>
+
+<h2>Story</h2>
+<p>Conjure the Souls of warriors you picked up along the way to protect the boat and the souls of the deceased. Cleverly decide which type of warrior is most suitable to fence off the different kinds of demons you will encounter. But, pay close attention to your resources! They are limited!</p>
+
+<h2>Responsibilities</h2>
+<div class="breakout flow flow-80 skills">
+  <div class="two-column">
+
+    <div class="two-column__one flow prose">
+      <h3>Level Designer</h3>
+      <p>As the Level Designer of the project I was responsible for creating the main level (replayable) of the game from start to finish.</p>
+      <p>I outlined level elements, the sequence of events and gameplay beats in text, drafted the layout, established metrics, created the block out of the level and defined a level creation workflow for the game including guidelines for set dressing.</p>
+      <p>I did background research on Ancient Egyptian Architecture and Mythology to define the theming and structure of space in the game.</p>
+      <p>I also analyzed reference titles and looked out for the few references of Tower Defense where the object you have to defend is a moving object.</p>
+      <p>I closely collaborated with the Environment Artists on theming, lighting and made suggestions for prop design, set pieces and architectural elements based on my research on Ancient Egyptian Mythology and Temple Architecture.</p>
+      <p>A special challenge of this game I dedicated myself to was the interplay of different “Nav Meshes”* in Unity. There were different layers for several in-game actors - like the player character and enemies - whereas some game objects had to be ignored altogether. Yet, all these components had to work together in the end to create a seamless game experience.</p>
+    </div>
+
+    <div class="two-column__two flow">
+
+      <div id="splide-skillGallery-0" class="splide" role="group" aria-label="Image gallery with lead designer activities">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for img in barqueImages.responsibilities.levelDesigner.skillGallery %}
+            <li class="splide__slide">
+              {% image img.src, img.alt %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="two-column two-column--swapped">
+
+    <div class="two-column__one flow prose">
+      <h3>Narrative Design</h3>
+      <p>As the Narrative Designer of this project I did thorough research on Ancient Egyptian Mythology, especially, notions of the underworld and the entities that inhabit this space. This research was the basis for the explicit and implicit story of the game and up to a certain degree also informed mechanics.</p>
+      <p>Based on my findings and concept I also made suggestions to the Art Department about character design and enemy roster.</p>
+      <p>I also collaborated intensively with the UI Artist about the theming and shape of UI elements.</p>
+      <p>Naturally, I wrote the narrative of the game, a monologue the ancient Sun God Ra is uttering in moments when players are recovering from tension, feeding the inclined player with background lore about the nightly venture of the Sun God through the underworld and the origins of the cosmos.</p>
+    </div>
+
+    <div class="two-column__two flow">
+      <div class="skill__img-wrapper">
+        {% image barqueImages.responsibilities.narrativeDesign.image.src, barqueImages.responsibilities.narrativeDesign.image.alt, "skill__img" %}
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="two-column">
+
+    <div class="two-column__one flow prose">
+      <h3>UI/ UX Design</h3>
+      <p>I was also responsible for specifying and refining the UI-Elements we needed based on the Game Design.</p>
+      <p>I created UX Flows for crucial game mechanics and together with the UI-Artist of the project defined the aesthetic look, scale and positioning of the User Interface(s).</p>
+    </div>
+
+    <div class="two-column__two flow">
+      <div id="splide-skillGallery-1" class="splide" role="group" aria-label="Image gallery with lead designer activities">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {% for img in barqueImages.responsibilities.uidesign.skillGallery %}
+            <li class="splide__slide">
+              {% image img.src, img.alt %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+</div>
+
+<div class="flow prose">
+  <h3>Scripting</h3>
+  <p>Since some team members were struck with illness during the production of “Barque of Ra” and one of our engineers also assumed the role of producer I helped out the engineering department with implementing some features to assure the progress of the project and take some of the work load from their shoulders.</p>
+  <ul class="">
+    <li>Navigation: The navigation of the “Barque” (= player character) on a dedicated NavMesh along a waypoint path and parts of the logic what happens when the waypoint is reached, like: stopping for x seconds and whether this is a waypoint where a combat encounter takes place, notifying the enemy spawners</li>
+    <li>Audio: An Audio Manager class responsible for playing sound in the game</li>
+    <li>Narrative Zones: Interactive Trigger Zones which trigger the narrative of the game told during passages where there is no combat alongside with the UI displaying the narrative following the observer pattern.</li>
+    <li>Interactive Obstacles: Obstacles which destroy the units of the player when they hit one of the obstacles: These were cut out of the project in the end but fully functional in the meantime.</li>
+    <li>Interactible Pick Ups (Collectibles)</li>
+    <li>Enemy Spawners: These spawn enemies of selected types in timed waves as long as the Barque is close by and the time frame for defending the Barque hasn’t ended yet.</li>
+    <li>Level Data Script: Contains information about a specific level when a new level is loaded like the spawn point of the Barque and the order of the waypoints it has to navigate in this level.</li>
+  </ul>
+</div>
+
+
+{% if barqueImages.gallery[0].src %}
+  <section id="splide-gallery" class="splide breakout flow" aria-labelledby="carousel-heading">
+    <h2 id="carousel-heading" class="visuallyhidden">Project Images</h2>
+
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for item in barqueImages.gallery %}
+        <li class="splide__slide">
+          {% image item.src, item.alt, "gallery__img" %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+{% endif %}
+
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function() {
+    const galleries = document.querySelectorAll('.splide');
+    galleries.forEach(slide => {
+      let splide = new Splide(`#${slide.id}`, {
+        type  : 'fade',
+        rewind: true,
+        padding: '3rem',
+        gap:'2rem',
+        lazyLoad: 'nearby',
+      });
+      splide.mount();
+    });
+  // init lightbox
+  const lightbox = document.querySelectorAll('.lightbox');
+  lightbox.forEach(box => {
+    const dialog = box.querySelector(".lightbox-dialog");
+    const showButton = box.querySelector(".lightbox-button-show");
+    const closeButton = box.querySelector(".lightbox-button-close");
+    showButton.addEventListener("click", () => {
+      dialog.showModal();
+    });
+    closeButton.addEventListener("click", () => {
+      dialog.close();
+    });
+  });
+  } );
+</script>
+
+<script defer src="/assets/vendor/splide-4.1.3/dist/js/splide.min.js"></script>
